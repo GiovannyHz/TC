@@ -1,0 +1,64 @@
+.menu{
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 135px;
+  // afecta al pimer hijo
+  &:first-child {
+    color: #fff;
+    font: $fz30 $tc;
+    // afecta a la primera letra
+    &::first-letter{
+      text-transform: uppercase;
+    }
+  }
+
+  .barMenu, .cambio{
+    position: relative;
+    padding:10px;
+    width:45px;
+
+    .bar1, .bar2, .bar3{
+      background-color: #fff;
+      // background-color: rgba(#334455, .7);
+      border-radius: 5px;
+      height: 3px;
+      width: 100%;
+
+      transition: all .2s;
+    }
+
+    .bar2{
+      margin: 3px 0px;
+    }
+
+  &:hover{
+      .bar2{
+        margin: 5px 0px;
+      }
+    }
+
+  }
+
+  .cambio{
+    & .bar1, .bar3{
+      position: absolute;
+      right:0px;
+    }
+
+   .bar1{
+     transform: rotate(45deg) scale(0.7);
+    }
+
+   .bar2{
+     opacity: 0;
+     display: none;
+    }
+
+   .bar3{
+     transform: rotate(-45deg) scale(0.7);
+    }
+  }
+}

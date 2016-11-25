@@ -1,0 +1,23 @@
+// Centrado
+.centrar-fx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Cursor Pointer
+.pointer{cursor: pointer;}
+// Fuente Mediano
+.mediano{
+  font-size: 2.8rem;
+}
+// Dereacha
+.right-fx{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.left-fx{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+@import "ed-grid/ed-grid"; // framework ED-Grid
+@import "librerias/normalize-min"; // Normalize
+@import "parciales/variables"; // clasesGenerales
+@import "parciales/clasesGenerales"; // clasesGenerales
+@import "modulos/barMenu"; // menu
+@import "modulos/social"; // Redes sociales
+
+
+
+/*font-family:
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: */
+html,body{
+  font-size: 62.5%;
+}
+
+header {
+  background: fixed center url(../img/fondo-tc2.jpg) no-repeat;
+  background-size: cover;
+  // height: 700px;
+  width: 100%;
+
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+.tc {
+  color: #345;
+  font: $fz $tc;
+  text-align: center;
+  .slogan {
+    font: $fz20 $texto;
+    display: block;
+    text-transform: uppercase;
+  }
+}
+
+.titulo-slogan{
+  height: 480px;
+}
