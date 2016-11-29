@@ -22,7 +22,6 @@
 
     .bar1, .bar2, .bar3{
       background-color: #fff;
-      // background-color: rgba(#334455, .7);
       border-radius: 5px;
       height: 3px;
       width: 100%;
@@ -33,17 +32,16 @@
     .bar2{
       margin: 3px 0px;
     }
-
-  &:hover{
-      .bar2{
-        margin: 5px 0px;
-      }
-    }
-
   }
 
+  // .menu afecta a .bar2
+  &:hover .bar2{
+    margin: 5px 0px;
+  }
+
+  // Clase JQuery
   .cambio{
-    & .bar1, .bar3{
+    .bar1, .bar3{
       position: absolute;
       right:0px;
     }

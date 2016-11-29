@@ -1,5 +1,5 @@
-@import "ed-grid/ed-grid"; // framework ED-Grid
 @import "librerias/normalize-min"; // Normalize
+@import "ed-grid/ed-grid"; // framework ED-Grid
 @import "parciales/variables"; // clasesGenerales
 @import "parciales/clasesGenerales"; // clasesGenerales
 @import "modulos/barMenu"; // menu
@@ -16,8 +16,9 @@ html,body{
 }
 
 header {
-  background: fixed center url(../img/fondo-tc2.jpg) no-repeat;
+  background: fixed  center url(../img/fondo-tc2.jpg) no-repeat;
   background-size: cover;
+
   // height: 700px;
   width: 100%;
 
@@ -31,7 +32,9 @@ ul {
 .tc {
   color: #345;
   font: $fz $tc;
+  line-height: 60px;//test
   text-align: center;
+  text-shadow: 0 0 5.6px rgba(#777,.3);//test
   .slogan {
     font: $fz20 $texto;
     display: block;
